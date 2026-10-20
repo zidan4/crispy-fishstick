@@ -11,6 +11,5 @@ export default function ProductPage({ params }: { params: Promise<{ productId: s
 }
 
 function ProductContent({ productId }: { productId: string }) {
-  return <h1>Product ID: {productId}</h1>;
-  
+  return <h1>Product ID: {productId}</h1>
 }
