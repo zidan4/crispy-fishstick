@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
 function ProductContent({ productId }: { productId: string }) {
-  return <p>Review for product {productId}</p>;
+  return <p>Review for product { productId }</p>;
 }
 
 export default function ProductPage({ params }: { params: Promise<{ productId: string }> }) {
