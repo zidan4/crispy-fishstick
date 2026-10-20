@@ -5,6 +5,7 @@ function ProductContent({ productId }: { productId: string }) {
 }
 
 export default function ProductPage({ params }: { params: Promise<{ productId: string }> }) {
+
   return (
     <Suspense fallback={<p>Loading product...</p>}>
       {params.then(({ productId }) => (
@@ -12,4 +13,5 @@ export default function ProductPage({ params }: { params: Promise<{ productId: s
       ))}
     </Suspense>
   );
+  
 }
